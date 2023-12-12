@@ -1,0 +1,273 @@
+/* Estilos Generales */
+html,
+body {
+  height: 100%;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #2a2a2e;
+  color: #efefef;
+}
+
+.t label {
+  padding-bottom: 1em;
+  display: inline-block;
+}
+
+.hidden {
+  display: none;
+}
+
+.header-left {
+  float: left;
+}
+
+.header-image {
+  width: 140px;
+  height: 100px;
+  padding: 10px;
+  position: absolute;
+}
+
+.table-container {
+  margin-top: 20px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+/* Encabezado */
+header {
+  background-color: #444;
+  color: #efefef;
+  text-align: center;
+  padding: 1em;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav a {
+  color: #efefef;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+nav a:hover {
+  background-color: #555;
+}
+
+/* Contenido Principal */
+main {
+  padding: 2em;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2em;
+  flex: 1 0 auto;
+  /* Esto hace que el main ocupe todo el espacio disponible */
+}
+
+.notifications-icon {
+  position: absolute;
+  top: 50px;
+  right: 80px;
+  cursor: pointer;
+}
+
+.add-btn,
+.add-btn1,
+.add-btn2,
+.add-btn3,
+.add-btn4,
+.add-btn5,
+.add-btn6,
+.update-btn,
+.delete-btn {
+  background-color: #444;
+  font-style: italic;
+  color: #cccccc;
+  width: 7%;
+  min-width: 70px;
+  height: 2em;
+  font-weight: 600;
+  margin-left: 1em;
+}
+
+.card {
+  background-color: #3a3a3e;
+  padding: 2em;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  transform: translateY(-5px);
+}
+
+.icon-white {
+  filter: invert(1);
+}
+
+a {
+  text-decoration: none;
+  font-size: 20px;
+}
+
+h1 {
+  border-top: 1em;
+  margin-top: 5px;
+  padding: 10px;
+}
+
+h2 {
+  border-bottom: 1px solid #555;
+  padding-bottom: 10px;
+  font-weight: 300;
+  color: #ddd;
+  margin-top: 0px;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table-filter {
+  text-align: right;
+  padding-bottom: 10px;
+  margin-right: 10px; /* Ajusta el margen derecho según tus preferencias */
+}
+
+.table-filter i {
+  margin-right: auto; /* Ajusta el espacio entre el icono y el texto según tus preferencias */
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+}
+
+/* Pie de página */
+footer {
+  background: #1e1e1e;
+  color: #ffffff;
+  text-align: center;
+  padding: 0.65rem 0;
+  font-size: 1rem;
+}
+
+footer nav ul {
+  padding: 1rem;
+  display: flex;
+  justify-content: center;
+}
+
+footer nav ul li {
+  list-style: none;
+  margin: 0 0.5rem;
+}
+
+footer nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+footer nav ul li a:hover {
+  color: #cccccc;
+}
+
+@media (max-width: 768px) {
+  /* Estilos para pantallas más pequeñas, como smartphones */
+  .header-image {
+    width: 80px; /* Ajusta el tamaño de la imagen según tus preferencias */
+    height: 60px;
+  }
+
+  /* Aplica un margen superior a las secciones "Categoria" y "Vehiculos" */
+  nav a[href*="categoria"],
+  nav a[href*="vehiculos"] {
+    margin-top: 10px; /* Ajusta la cantidad de margen según tus preferencias */
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  /* Estilos para tabletas */
+}
+
+@media (min-width: 1025px) {
+  /* Estilos para pantallas más grandes, como computadoras de escritorio */
+}
+
+#servicio-table td:last-child {
+  width: 10%; /* Ajusta el ancho de la columna de acciones según tus necesidades */
+}
+
+#sucursal-table td:last-child {
+  width: 10%; /* Ajusta el ancho de la columna de acciones según tus necesidades */
+}
+
+#usuarios-table td:last-child {
+  width: 10%; /* Ajusta el ancho de la columna de acciones según tus necesidades */
+}
+
+#categoria-table td:last-child {
+  width: 10%; /* Ajusta el ancho de la columna de acciones según tus necesidades */
+}
+
+#vehiculos-table td:last-child {
+  width: 10%; /* Ajusta el ancho de la columna de acciones según tus necesidades */
+}
+
+#servicio-table img {
+  max-width: 50px; /* Ajusta el ancho máximo de las imágenes según tus necesidades */
+  max-height: 50px; /* Ajusta la altura máxima de las imágenes según tus necesidades */
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+#sucursal-table img {
+  max-width: 50px; /* Ajusta el ancho máximo de las imágenes según tus necesidades */
+  max-height: 50px; /* Ajusta la altura máxima de las imágenes según tus necesidades */
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+#usuarios-table img {
+  max-width: 50px; /* Ajusta el ancho máximo de las imágenes según tus necesidades */
+  max-height: 50px; /* Ajusta la altura máxima de las imágenes según tus necesidades */
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+#categoria-table img {
+  max-width: 50px; /* Ajusta el ancho máximo de las imágenes según tus necesidades */
+  max-height: 50px; /* Ajusta la altura máxima de las imágenes según tus necesidades */
+  padding-right: 5px;
+  padding-left: 5px;
+}
+
+#vehiculos-table img {
+  max-width: 50px; /* Ajusta el ancho máximo de las imágenes según tus necesidades */
+  max-height: 50px; /* Ajusta la altura máxima de las imágenes según tus necesidades */
+  padding-right: 5px;
+  padding-left: 5px;
+}
